@@ -1,0 +1,22 @@
+name: ChatPhrases 2
+version: 2.0.0
+author: IonLogic
+website: https://github.com/ZeWildGuy/ChatPhrases-2
+main: uk.co.quft.chatphrases2.ChatPhrases
+
+commands:
+   chatphrases:
+      description: The master ChatPhrases command
+      usage: /phrases [player]
+      permission: chatphrases.command
+      permission-message: You don't have permissions to use this command.
+
+permissions:
+    chatphrases.*:
+        description: Gives access to all ChatPhrases commands
+        children:
+            chatphrases.command: true
+            chatphrases.reload: true
+    chatphrases.reload:
+        description: Reloads the chat phrases plugin
+        default: op

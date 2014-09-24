@@ -1,0 +1,9 @@
+settings:
+  use-error-message: true
+  error-message: The requested phrase could not be found!
+phrases:
+  example_phrase: &3This is an example phrase!
+  unknown_permission: &4Unknown Command! &fType 'help' for help.
+  no_permission: &4You do not have permission to do this.
+  no_valid_arguments: &4 No valid arguments given!
+  reloading_plugin: &3Reloading plugin.
