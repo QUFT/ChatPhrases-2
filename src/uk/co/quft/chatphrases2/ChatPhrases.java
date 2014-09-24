@@ -55,7 +55,11 @@ public class ChatPhrases extends JavaPlugin {
 
         }
 
-        log.info("[ChatPhrases] " + version + " is now running!");
+        log.info("[ChatPhrases] v" + version + " is now running!");
+    }
+
+    public void reloadPhrases() {
+        //Reload phrases
     }
 
     @Override
@@ -68,7 +72,7 @@ public class ChatPhrases extends JavaPlugin {
                 if(sender.hasPermission("chatphrases.reload")) {
                     sender.sendMessage(ChatPhrase.getPhrase("reloading_plugin"));
                     this.reloadConfig();
-                    this.onEnable();
+                    this.reloadPhrases();
                 } else {
                     sender.sendMessage(ChatPhrase.getPhrase("no_permission"));
                 }
