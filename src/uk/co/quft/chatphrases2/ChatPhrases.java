@@ -1,6 +1,8 @@
 package uk.co.quft.chatphrases2;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.logging.Logger;
 
 import org.bukkit.ChatColor;
@@ -77,7 +79,9 @@ public class ChatPhrases extends JavaPlugin {
                     sender.sendMessage(ChatPhrase.getPhrase("no_permission"));
                 }
             } else {
-
+                HashMap<String, String> map_variables = new HashMap<String, String>();
+                map_variables.put("version", version);
+                sender.sendMessage(ChatPhrase.getPhrase("running_chatphrases_version_x", map_variables));
             }
             return true;
         }

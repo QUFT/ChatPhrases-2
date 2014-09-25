@@ -7,3 +7,4 @@ phrases:
   no_permission: &4You do not have permission to do this.
   no_valid_arguments: &4 No valid arguments given!
   reloading_plugin: &3Reloading plugin.
+  running_chatphrases_version_x: &3Running ChatPhrases version &version&
