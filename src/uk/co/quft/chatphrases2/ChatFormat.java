@@ -85,7 +85,6 @@ public class ChatFormat {
         message = message.replaceAll("&e", ChatColor.YELLOW + "");
         message = message.replaceAll("&f", ChatColor.WHITE + "");
 
-        message = parseChatColour(message);
         message = message.replaceAll("&k", ChatColor.MAGIC + "");
         message = message.replaceAll("&0", ChatColor.ITALIC + "");
         message = message.replaceAll("&n", ChatColor.UNDERLINE + "");
