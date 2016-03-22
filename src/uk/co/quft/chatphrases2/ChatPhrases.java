@@ -22,6 +22,7 @@ public class ChatPhrases extends JavaPlugin {
     public static final String version = "2.0.0";
     public static String errorPhrase;
     public static boolean useErrorPhrase;
+    public static boolean removeUnusedVariableCodes;
 
     @Override
     public void onDisable() {
@@ -56,6 +57,8 @@ public class ChatPhrases extends JavaPlugin {
             ChatPhrase.add(phrase_id, phrase_content);
 
         }
+
+        //Change ban messages, kick messages and etc.
 
         log.info("[ChatPhrases] v" + version + " is now running!");
     }

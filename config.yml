@@ -1,6 +1,7 @@
 settings:
   use-error-message: true
   error-message: The requested phrase could not be found!
+  remove-unused-variable-codes: false
 phrases:
   example_phrase: example value
   unknown_permission: &4Unknown Command! &fType 'help' for help.
